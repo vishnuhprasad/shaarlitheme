@@ -6,7 +6,7 @@
 // Requires: php 5.1.x  (but autocomplete fields will only work if you have php 5.2.x)
 // -----------------------------------------------------------------------------------------------
 // Hardcoded parameter (These parameters can be overwritten by creating the file /config/options.php)
-$GLOBALS['config']['DATADIR'] = 'data'; // Data subdirectory
+$GLOBALS['config']['DATADIR'] = $_ENV["OPENSHIFT_DATA_DIR"].'/shaarli'; // Data subdirectory
 $GLOBALS['config']['CONFIG_FILE'] = $GLOBALS['config']['DATADIR'].'/config.php'; // Configuration file (user login/password)
 $GLOBALS['config']['DATASTORE'] = $GLOBALS['config']['DATADIR'].'/datastore.php'; // Data storage file.
 $GLOBALS['config']['LINKS_PER_PAGE'] = 20; // Default links per page.
