@@ -24,9 +24,15 @@
 			
 					.main.style2.right .content {
 						left: 40%;
+                        
+                        border-radius: 10px;
 					}
 
-				.main.style2.inactive {
+                .main.style2.left .content {
+                    border-radius: 10px;
+                }
+
+                .main.style2.inactive {
 				}
 
 					.main.style2.inactive .content {
@@ -34,6 +40,7 @@
 
 						.main.style2.inactive.left .content {
 							left: -60%;
+                            
 						}
 						
 /*********************************************************************************/
