@@ -127,27 +127,18 @@
 						promotions en cours, fermetures exceptionnelles, nouveaux produits ...</p>
 					</header>
 					<div class="box container small">
-					
-						<!--
-							 Contact Form
-							 
-							 To get this working, place a script on your server to receive the form data, then
-							 point the "action" attribute to it (eg. action="http://mydomain.tld/mail.php").
-							 More on how it all works here: http://www.1stwebdesigner.com/tutorials/custom-php-contact-forms/
-						-->
-							<form method="post" action="#">
-								<div class="row half">
-									<div class="12u"><input type="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" class="button" value="S'abonner" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-
+                        <form method="post" action="saveemail.php">
+                            <div class="row half">
+                                <div class="12u"><input type="text" name="email" placeholder="Email" /></div>
+                            </div>
+                            <div class="row">
+                                <div class="12u">
+                                    <ul class="actions">
+                                        <li><input type="submit" class="button" value="S'abonner" /></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
 					</div>
 				</div>
 			</section>
