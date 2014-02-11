@@ -2,7 +2,7 @@
 	if( isset($_POST['email']) ) {
 	
 		clearstatcache(); 
-		$logname = $_ENV["OPENSHIFT_DATA_DIR"].'/shaarli/emails.txt';
+		$logname = $_ENV["OPENSHIFT_DATA_DIR"].'/cameleon/emails.txt';
 		if(!file_exists($logname)) 
 		{ 
 		   $fp = fopen($logname,"w");  
@@ -17,7 +17,7 @@
 		if(strpos($logcontents,$email)) {
 			die('You are already subscribed.');
 		} else {
-			$filecontents = $email.'\r\n';
+			$filecontents = $email.',';
 			$fileopen = fopen($logname,'a+');
 			$filewrite = fwrite($fileopen,$filecontents);
 			$fileclose = fclose($fileopen);
