@@ -1,1 +1,7 @@
 php/shaarli/config
+php.ini
+php/php_errors.log
+php/sessions
+php/shaarli/cache
+php/shaarli/data
+php/shaarli/tmp

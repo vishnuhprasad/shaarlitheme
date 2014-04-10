@@ -26,7 +26,7 @@ $GLOBALS['config']['UPDATECHECK_INTERVAL'] = 86400 ; // Updates check frequency 
 // -----------------------------------------------------------------------------------------------
 // You should not touch below (or at your own risks !)
 // Optionnal config file.
-if (is_file($GLOBALS['config']['DATADIR'].'/options.php')) require($GLOBALS['config']['DATADIR'].'/options.php');
+if (is_file('config/options.php')) require('config/options.php');
 
 define('shaarli_version','0.0.41 beta');
 define('PHPPREFIX','<?php /* '); // Prefix to encapsulate data in php code.
