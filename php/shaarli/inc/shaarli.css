@@ -5,6 +5,16 @@
 Copyright (c) 2010, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html
 version: 2.8.2r1
 */
+
+/* http://www.commentredirect.com/make-awesome-flat-buttons-css/ */
+
+/* Header color : #ff6a80 
+ * More darken header color #da0020
+ 
+ * 2 #ed4444
+ * 2 #cd1313
+ */
+
 html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
 
 body { font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:10pt; background-color: #ffffff; }
@@ -18,7 +28,6 @@ input, textarea {
 	background: linear-gradient(#dedede, #ffffff);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	padding:5px;
-	border-radius: 5px 5px 5px 5px;
 	border: none;
 	color:#000;
 
@@ -36,7 +45,6 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 	background: -ms-linear-gradient(#c0c0c0, #ffffff);
 	background: -o-linear-gradient(#c0c0c0, #ffffff);
 	background: linear-gradient(#c0c0c0, #ffffff);
-    border-radius: 3px 3px 3px 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     height: 24px;
@@ -55,7 +63,6 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 	background: -ms-linear-gradient(#c0c0c0, #ffffff);
 	background: -o-linear-gradient(#c0c0c0, #ffffff);
 	background: linear-gradient(#c0c0c0, #ffffff);
-    border-radius: 3px 3px 3px 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     height: 20px;
@@ -101,13 +108,7 @@ cursor:pointer;
 
 #pageheader
 {
-    background-color: #333333;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#333333), to(#111111));
-	background: -webkit-linear-gradient(#333333, #111111);
-	background: -moz-linear-gradient(#333333, #111111);
-	background: -ms-linear-gradient(#333333, #111111);
-	background: -o-linear-gradient(#333333, #111111);
-	background: linear-gradient(#333333, #111111);
+    background-color: #ff6a80;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	width:auto;
 	padding:0 10px 5px 10px;
@@ -116,18 +117,10 @@ cursor:pointer;
 
 #pageheader a
 {
-    background-color: #333333;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#333333), to(#000000));
-	background: -webkit-linear-gradient(#333333, #000000);
-	background: -moz-linear-gradient(#333333, #000000);
-	background: -ms-linear-gradient(#333333, #000000);
-	background: -o-linear-gradient(#333333, #000000);
-	background: linear-gradient(#333333, #000000);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-	padding:5px;
-	border-radius: 5px 5px 5px 5px;
+    background-color: #ff6a80;
+	padding:10px;
 	margin:10px 3px 3px 3px;
-	color:#A2DD42;
+	color:white;
 	float:left;
 	text-decoration:none;
 }
