@@ -20,12 +20,6 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 body { font-family: "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:10pt; background-color: #ffffff; }
 input, textarea {
 	background-color: #dedede;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dedede), to(#ffffff));
-	background: -webkit-linear-gradient(#dedede, #ffffff);
-	background: -moz-linear-gradient(#dedede, #ffffff);
-	background: -ms-linear-gradient(#dedede, #ffffff);
-	background: -o-linear-gradient(#dedede, #ffffff);
-	background: linear-gradient(#dedede, #ffffff);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	padding:5px;
 	border: none;
@@ -98,7 +92,6 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 #pageheader #logo{
 background-image: url('../images/logo.png');
 background-repeat: no-repeat;
-float:left;
 margin:0 10px 0 10px;
 width:105px;
 height:55px;
@@ -111,8 +104,9 @@ cursor:pointer;
     background-color: #ff6a80;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	width:auto;
-	padding:0 10px 5px 10px;
-	margin: auto; 
+	padding:10px;
+	margin: auto;
+	height: 40px;
 }
 
 #pageheader a
@@ -121,8 +115,11 @@ cursor:pointer;
 	padding:10px;
 	margin:10px 3px 3px 3px;
 	color:white;
-	float:left;
 	text-decoration:none;
+}
+
+.linkcount {
+    color: white;
 }
 
 #toolsdiv a{
@@ -133,17 +130,10 @@ cursor:pointer;
 }
 .linksperpage,.tagfilter,.searchform,.addform {
 	background-color: #dedede;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dedede), to(#ffffff));
-	background: -webkit-linear-gradient(#dedede, #ffffff);
-	background: -moz-linear-gradient(#dedede, #ffffff);
-	background: -ms-linear-gradient(#dedede, #ffffff);
-	background: -o-linear-gradient(#dedede, #ffffff);
-	background: linear-gradient(#dedede, #ffffff);
 	display:inline;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	padding:5px;
 	border: none;
-	border-radius: 5px 5px 5px 5px;
 	margin:10px 3px 3px 3px;
 	color:#cecece;
 }
@@ -167,26 +157,18 @@ cursor:pointer;
 
 .tagfilter input.bigbutton,.searchform input.bigbutton,.addform input.bigbutton{
     background-color: #dedede;
-   	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#dedede), to(#ffffff));
-	background: -webkit-linear-gradient(#dedede, #ffffff);
-	background: -moz-linear-gradient(#dedede, #ffffff);
-	background: -ms-linear-gradient(#dedede, #ffffff);
-	background: -o-linear-gradient(#dedede, #ffffff);
-	background: linear-gradient(#dedede, #ffffff);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 	padding:0 5px 0 5px;
 	margin:5px 0 5px 0;
 	height:20px;
-	border-radius: 5px 5px 5px 5px;
 	cursor:pointer;
 }
 
-#shaarli_title { font-weight:bold; font-style:italic; margin-top:0;}
+#shaarli_title { font-weight:bold; margin-top:0;}
 #shaarli_title a { color: #fff !important; }
 
-#pageheader a:visited { color:#98C943; text-decoration:none;}
-#pageheader a:hover { color:#FFFFC9; text-decoration:none;}
-#pageheader a:active { color:#bbb; text-decoration:none;}
+#pageheader a:hover { color:#fff; text-decoration:none;}
+#pageheader a:active { color:#fff; text-decoration:none;}
+
 #searchcriteria { padding: 4px 0px 5px 5px; font-weight:bold;}
 .paging { padding:5px;background-color:#777; color:#ccc; text-align:center;  clear:both;}
 .paging a:link { color:#ccc; text-decoration:none;}
