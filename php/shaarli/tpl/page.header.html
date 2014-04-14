@@ -5,16 +5,19 @@
     {ignore} When called as a popup from bookmarklet, do not display menu. {/ignore}
 {else}
     {if="isLoggedIn()"}
-        <a href="?do=logout">Logout</a><a href="?do=tools">Tools</a><a href="?do=addlink"><b>Add link</b></a>
+        <a href="?do=logout" class="icon logout">Logout</a>
+        <a href="?do=tools" class="icon tools">Tools</a>
+        <a href="?do=addlink" class="icon plus"><b>Add link</b></a>
     {elseif="$GLOBALS['config']['OPEN_SHAARLI']"}
-        <a href="?do=tools">Tools</a><a href="?do=addlink"><b>Add link</b></a>
+        <a href="?do=tools" class="icon tools">Tools</a>
+        <a href="?do=addlink" class="icon plus"><b>Add link</b></a>
     {else}
-        <a href="?do=login" class="login"></a>
+        <a href="?do=login" class="icon login"></a>
     {/if}
 {/if}
 
     <form method="GET" class="form-wrapper" name="searchform">
         <input type="text" id="searchform_value" placeholder="Rechercher parmis {if="!empty($linkcount)"}{$linkcount} liens{/if}" name="searchterm" value="" required>
-        <button type="submit">Rechercher</button>
+        <button type="submit" class= "icon search"></button>
     </form>
     
