@@ -32,15 +32,14 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 
 /* Buttons */
 .bigbutton {
-    background-color: #c0c0c0;
+    background-color: #ff6a80;
     cursor: pointer;
-    height: 24px;
+    height: 35px;
     margin-left: 5px;
-	color: #606060;
-	border-style:outset;
-	border-width:1px;
-
-	}
+	color: white;
+	border-radius: 3px;
+}
+	
 .smallbutton {
     background-color: #c0c0c0;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -51,8 +50,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 	color: #606060;
 	border-style:outset;
 	border-width:1px;
-
-	}
+}
 
 /* Small tab on the left of each link with edit/delete buttons. */
 .button_edit, .button_delete { border-radius:0; box-shadow:none; border-style:none; border-width:0; padding:0; background:none; }
@@ -61,17 +59,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 	left:-1px;  
 	padding:4px 2px 2px 2px;
 	background-color:#f0f0f0;
-
-	-webkit-border-radius:0px 6px 6px 0px;
-	-moz-border-radius:0px 6px 6px 0px;
-	-o-border-radius:0px 6px 6px 0px;
-	-ms-border-radius:0px 6px 6px 0px;
 	border-radius:0px 6px 6px 0px;
-
-	-webkit-box-shadow:0px 0px 3px 0px #333333;
-	-moz-box-shadow:0px 0px 3px 0px #333333;
-	-o-box-shadow:0px 0px 3px 0px #333333;
-	-ms-box-shadow:0px 0px 3px 0px #333333;
 	box-shadow:0px 0px 3px 0px #333333;
 }
 
@@ -83,10 +71,19 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
     display: inline-block;
 }
 
+#pageheader .login {
+    width:40px;
+    height:40px;
+    background-size:40px 40px;
+    margin-left:10px;
+    cursor:pointer;
+    background-image:url('../images/login-icon.png');
+    background-repeat:no-repeat;
+}
+
 #pageheader
 {
     background-color: #888;
-    box-shadow: 8px 8px 12px #ff6a80;
 	width:auto;
 	padding:5px;
 	margin: auto;
