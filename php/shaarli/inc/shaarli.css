@@ -291,7 +291,13 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 #pageheader a:active { color:#fff; text-decoration:none;}
 
 #searchcriteria { padding: 4px 0px 5px 5px; font-weight:bold;}
-.paging { padding:5px;background-color:#ff6a80; color:#ccc; text-align:center;  clear:both; font-size: 12pt;}
+.paging { 
+    bottom: 14px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding:5px;background-color:#ff6a80; color:#ccc; text-align:center;  clear:both; font-size: 12pt;
+}
 .paging a:link { color:#ccc; text-decoration:none;}
 .paging a:visited { color:#ccc;  }
 .paging a:hover {  color:#FFFFC9;  }
@@ -340,17 +346,17 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 .linkdescription a:hover { color:#F57900; }
 .linktaglist { padding-top:6px;}
 .linktag {
-    font-size:9pt;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-size:8pt;
+    border: 1px solid #ff6a80;
 	padding:3px 3px 3px 20px;
 	height:20px;
 	color: white;
 	border-radius: 3px 3px 3px 3px;
 	cursor:pointer;
-	background: #ff6a80 url('../images/tag_blue.png') no-repeat 3px center;
+	background: #FFF url('../images/tag_blue.png') no-repeat 3px center;
 }
 .linktag:hover { border-color: #555573; color:#000; }
-.linktag a { color:#F0F0F0; text-decoration:none; }
+.linktag a { color:#888; text-decoration:none; }
 .linkshort { font-size:8pt; color:#888; }
 .linkshort a { text-decoration: none; color:#393964; }
 .linkshort a:hover { text-decoration: underline; }
@@ -363,7 +369,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
     position: fixed;
     background-color: white;
 }
-#footer  a{ color:#ff6a80;}
+#footer  a{ color:#FFF;}
 #footer  a:hover{ color:#111111;}
 #newversion { background-color: #FFFFA0; color:#000; position:absolute; top:0;right:0; padding:2 7 2 7;  font-size:9pt;}
 #cloudtag  { padding-left:10%; padding-right:10%; }
