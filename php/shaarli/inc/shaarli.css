@@ -56,11 +56,8 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 .button_edit, .button_delete { border-radius:0; box-shadow:none; border-style:none; border-width:0; padding:0; background:none; }
 .linkeditbuttons {  
 	position:absolute; 
-	left:-1px;  
-	padding:4px 2px 2px 2px;
-	background-color:#f0f0f0;
-	border-radius:0px 6px 6px 0px;
-	box-shadow:0px 0px 3px 0px #333333;
+	left:0px;  
+    padding-left: 4px;
 }
 
 #pageheader #logo{
@@ -74,9 +71,10 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 #pageheader .icon {
     width:40px;
     height:40px;
-    background-size:40px 40px;
+    background-size:30px 30px;
     margin-left:10px;
     cursor:pointer;
+    background-position:center center;
     background-repeat:no-repeat;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -161,22 +159,6 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 	cursor:pointer;
 }
 
-.searchform button{
-    overflow: visible;
-    position: relative;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    height: 30px;
-    width: 110px;
-    font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
-    color: #fff;
-    text-transform: uppercase;
-    background: #ff6a80;
-    border-radius: 0 3px 3px 0;      
-    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
-}
-
 /* Form wrapper styling */
 .form-wrapper {
     width: auto;
@@ -186,9 +168,8 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 }
  
 /* Form text input */
- 
 .form-wrapper input {
-    width: 200px;
+    width: 220px;
     height: 20px;
     padding: 10px 5px;
     float: left;    
@@ -240,7 +221,6 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
     width: 60px;
     background: #ff6a80;
     border-radius: 0 3px 3px 0;      
-    
     background-position:center center;
     background-size:30px 30px;
     cursor:pointer;
@@ -350,7 +330,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 .linkdescription { 
     color:#000; 
     margin-top:0; 
-    margin-bottom:12px;
+    font-size:11pt;
     font-weight:normal; 
     max-height:400px; 
     overflow:auto;
@@ -358,22 +338,19 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 }
 .linkdescription a { text-decoration: none; color:#3465A4; }
 .linkdescription a:hover { color:#F57900; }
-.linktaglist { padding-top:10px;}
+.linktaglist { padding-top:6px;}
 .linktag {
     font-size:9pt;
-    background-color: #F2F2F2;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 	padding:3px 3px 3px 20px;
 	height:20px;
+	color: white;
 	border-radius: 3px 3px 3px 3px;
 	cursor:pointer;
-	background-image:url('../images/tag_blue.png');
-	background-repeat:no-repeat;
-	background-position:3px center;
-	background-color:#ffffff;
+	background: #ff6a80 url('../images/tag_blue.png') no-repeat 3px center;
 }
 .linktag:hover { border-color: #555573; color:#000; }
-.linktag a { color:#777; text-decoration:none; }
+.linktag a { color:#F0F0F0; text-decoration:none; }
 .linkshort { font-size:8pt; color:#888; }
 .linkshort a { text-decoration: none; color:#393964; }
 .linkshort a:hover { text-decoration: underline; }
