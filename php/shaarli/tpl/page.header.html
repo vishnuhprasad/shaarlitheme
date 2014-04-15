@@ -5,12 +5,12 @@
     {ignore} When called as a popup from bookmarklet, do not display menu. {/ignore}
 {else}
     {if="isLoggedIn()"}
-        <a href="?do=logout" class="icon logout">Logout</a>
-        <a href="?do=tools" class="icon tools">Tools</a>
-        <a href="?do=addlink" class="icon plus"><b>Add link</b></a>
+        <a href="?do=logout" class="icon logout"></a>
+        <a href="?do=tools" class="icon tools"></a>
+        <a href="?do=addlink" class="icon plus"></a>
     {elseif="$GLOBALS['config']['OPEN_SHAARLI']"}
-        <a href="?do=tools" class="icon tools">Tools</a>
-        <a href="?do=addlink" class="icon plus"><b>Add link</b></a>
+        <a href="?do=tools" class="icon tools"></a>
+        <a href="?do=addlink" class="icon plus"></a>
     {else}
         <a href="?do=login" class="icon login"></a>
     {/if}

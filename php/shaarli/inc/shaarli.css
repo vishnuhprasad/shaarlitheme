@@ -179,7 +179,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 
 /* Form wrapper styling */
 .form-wrapper {
-    width: 400px;
+    width: auto;
     border-radius: 10px;
     display: inline-block;
     float: right;
@@ -188,17 +188,23 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 /* Form text input */
  
 .form-wrapper input {
-    width: 330px;
+    width: 200px;
     height: 20px;
     padding: 10px 5px;
     float: left;    
     font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
     border: 0;
     background: #eee;
-    border-radius: 3px 0 0 3px;      
+    border-radius: 3px 0 0 3px; 
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    transition: width 0.3s ease;     
 }
  
 .form-wrapper input:focus {
+    width: 330px;
     outline: 0;
     background: #fff;
     box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
@@ -240,20 +246,16 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
     cursor:pointer;
     background-repeat:no-repeat;
     background-image:url('../images/search-icon.png');
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}   
+    -webkit-transition: width 0.3s ease;
+    -moz-transition: width 0.3s ease;
+    -o-transition: width 0.3s ease;
+    -ms-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
    
-.form-wrapper button:hover{ 
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-}   
+.form-wrapper button:hover{
+    width: 80px;
+}
    
 .form-wrapper button:active,
 .form-wrapper button:focus{   
@@ -324,7 +326,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 #toolsdiv { color:#ffffff; padding:5px 5px 5px 5px; clear:left; }
 #uploaddiv { color:#ffffff; padding:5px 5px 5px 5px; clear:left; }
 #editlinkform { height:100%;color:#ffffff; padding:5px 5px 5px 15px; width:80%; clear:left; }
-#linklist { padding-bottom: 45px; }
+#linklist { padding-bottom: 40px; }
 #linklist li {
 	padding:4px 10px 15px 20px; border-top: 1px solid #bbb; clear:both;
     background-color: #F2F2F2;
@@ -345,7 +347,15 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 .linkdate a { background-image:url('../images/calendar.png');padding:2px 0 3px 20px;background-repeat:no-repeat;text-decoration: none; color:#E28E3F;  }
 .linkdate a:hover { color: #F57900 }
 .linkurl { font-size:8pt; color:#4BAA74; }
-.linkdescription { color:#000; margin-top:0; margin-bottom:12px; font-weight:normal; max-height:400px; overflow:auto; }
+.linkdescription { 
+    color:#000; 
+    margin-top:0; 
+    margin-bottom:12px;
+    font-weight:normal; 
+    max-height:400px; 
+    overflow:auto;
+    font-style: italic;
+}
 .linkdescription a { text-decoration: none; color:#3465A4; }
 .linkdescription a:hover { color:#F57900; }
 .linktaglist { padding-top:10px;}
@@ -369,7 +379,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 .linkshort a:hover { text-decoration: underline; }
 .buttoneditform { display:inline; }
 #footer { 
-    bottom: 5px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     font-size:8pt; text-align:center; border-top:1px solid #ddd; color: #888; clear:both; 
