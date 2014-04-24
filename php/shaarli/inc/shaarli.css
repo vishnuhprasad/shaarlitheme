@@ -291,12 +291,32 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 #pageheader a:active { color:#fff; text-decoration:none;}
 
 #searchcriteria { padding: 4px 0px 5px 5px; font-weight:bold;}
-.paging { 
-    bottom: 14px;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    padding:5px;background-color:#ff6a80; color:#ccc; text-align:center;  clear:both; font-size: 12pt;
+@media (max-width:640px) {
+    .paging {
+        width: 100%;
+        padding:5px;background-color:#ff6a80; color:#ccc; text-align:center;  clear:both; font-size: 12pt;
+    }
+    #footer { 
+        display: none;
+    }
+}
+
+@media (min-width:640px) {
+    .paging { 
+        bottom: 14px;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        padding:5px;background-color:#ff6a80; color:#ccc; text-align:center;  clear:both; font-size: 12pt;
+    }
+    #footer { 
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        font-size:8pt; text-align:center; border-top:1px solid #ddd; color: #888; clear:both; 
+        position: fixed;
+        background-color: white;
+    }
 }
 .paging a:link { color:#ccc; text-decoration:none;}
 .paging a:visited { color:#ccc;  }
@@ -361,14 +381,7 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
 .linkshort a { text-decoration: none; color:#393964; }
 .linkshort a:hover { text-decoration: underline; }
 .buttoneditform { display:inline; }
-#footer { 
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    font-size:8pt; text-align:center; border-top:1px solid #ddd; color: #888; clear:both; 
-    position: fixed;
-    background-color: white;
-}
+
 #footer a{ color:#ff6a80;}
 #footer a:hover{ color:#111111;}
 #newversion { background-color: #FFFFA0; color:#000; position:absolute; top:0;right:0; padding:2 7 2 7;  font-size:9pt;}
