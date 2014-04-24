@@ -369,8 +369,8 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
     position: fixed;
     background-color: white;
 }
-#footer  a{ color:#FFF;}
-#footer  a:hover{ color:#111111;}
+#footer a{ color:#ff6a80;}
+#footer a:hover{ color:#111111;}
 #newversion { background-color: #FFFFA0; color:#000; position:absolute; top:0;right:0; padding:2 7 2 7;  font-size:9pt;}
 #cloudtag  { padding-left:10%; padding-right:10%; }
 #cloudtag a { color:black; text-decoration:none; }
