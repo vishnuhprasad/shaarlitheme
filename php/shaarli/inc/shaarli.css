@@ -166,6 +166,12 @@ h1 { font-size:20pt; font-weight:bold; font-style:italic; margin-bottom:20px; }
     display: inline-block;
     float: right;
 }
+
+@media (max-width:640px) {
+    .form-wrapper {
+        display: none;
+    }
+}
  
 /* Form text input */
 .form-wrapper input {
