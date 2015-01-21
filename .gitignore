@@ -5,3 +5,4 @@ php/sessions
 php/shaarli/cache
 php/shaarli/data
 php/shaarli/tmp
+.c9
